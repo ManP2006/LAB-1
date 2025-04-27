@@ -1,0 +1,2 @@
+fahrenheit = int(input("Enter Fahrenheit: "))
+print("Celsius:", (fahrenheit - 32) * 5 / 9)

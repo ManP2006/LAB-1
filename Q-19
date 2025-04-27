@@ -1,0 +1,2 @@
+radius = int(input("Enter radius of circle: "))
+print("Area:", (22 / 7) * radius * radius)

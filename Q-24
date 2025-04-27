@@ -1,0 +1,3 @@
+a = input("Enter first value: ")
+b = input("Enter second value: ")
+print("Swapped values:", b, a)

@@ -1,0 +1,2 @@
+dollars = int(input("Enter dollars: "))
+print("Pounds:", (dollars * 48) / 70)

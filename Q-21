@@ -1,0 +1,4 @@
+gross_salary = int(input("Enter gross salary: "))
+allowance = gross_salary * 0.10
+deduction = gross_salary * 0.03
+print("Net Salary:", gross_salary + allowance - deduction)

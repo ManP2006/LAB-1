@@ -1,0 +1,2 @@
+gross_sales = int(input("Enter gross sales: "))
+print("Net Sales:", gross_sales - (gross_sales * 0.10))

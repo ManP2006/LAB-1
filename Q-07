@@ -1,0 +1,2 @@
+minutes = intt(input("Enter minutes: "))
+print("Hours:", minutes / 60)

@@ -1,0 +1,2 @@
+kg = int(input("Enter kilograms: "))
+print("Grams:", kg * 1000)

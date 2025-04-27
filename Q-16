@@ -1,0 +1,4 @@
+principal = int(input("Enter principal: "))
+rate = int(input("Enter rate: "))
+time = int(input("Enter time: "))
+print("Interest:", (principal * rate * time) / 100)
