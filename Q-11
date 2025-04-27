@@ -1,2 +1,11 @@
-grams = int(input("Enter grams: "))
-print("Kilograms:", grams / 1000)
+x1, y1 = map(int, input("Enter coordinates of first point (x1 y1): ").split())
+x2, y2 = map(int, input("Enter coordinates of second point (x2 y2): ").split())
+x3, y3 = map(int, input("Enter coordinates of third point (x3 y3): ").split())
+
+# Calculate the area of the triangle formed by the three points
+area = abs(x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2)) / 2
+
+if area == 0:
+    print("Points lie on a straight line")
+else:
+    print("Points do not lie on a straight line")

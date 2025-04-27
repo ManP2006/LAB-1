@@ -1,2 +1,39 @@
-celsius = int(input("Enter Celsius: "))
-print("Fahrenheit:", (9 / 5) * celsius + 32)
+sub1 = int(input("Enter marks of subject 1: "))
+sub2 = int(input("Enter marks of subject 2: "))
+sub3 = int(input("Enter marks of subject 3: "))
+total = sub1 + sub2 + sub3
+average = total / 3
+print("Total:", total)
+print("Average:", average)
+
+def get_grade(marks):
+    if marks == -1:
+        return "NA"
+    elif 0 <= marks <= 39:
+        return "F"
+    elif 40 <= marks <= 44:
+        return "P"
+    elif 45 <= marks <= 49:
+        return "C"
+    elif 50 <= marks <= 54:
+        return "B"
+    elif 55 <= marks <= 59:
+        return "B+"
+    elif 60 <= marks <= 69:
+        return "A"
+    elif 70 <= marks <= 79:
+        return "A+"
+    elif 80 <= marks <= 100:
+        return "O"
+    else:
+        return "Invalid"
+
+print("Grades:")
+print("Subject 1:", get_grade(sub1))
+print("Subject 2:", get_grade(sub2))
+print("Subject 3:", get_grade(sub3))
+
+if sub1 < 40 or sub2 < 40 or sub3 < 40:
+    print("Result: Fail")
+else:
+    print("Result: Pass")

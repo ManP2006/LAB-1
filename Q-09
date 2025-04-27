@@ -1,2 +1,5 @@
-rupees = int(input("Enter rupees: "))
-print("Dollars:", rupees / 48)
+num = int(input("Enter a number: "))
+if num < 0:
+    print("Absolute Value:", -num)
+else:
+    print("Absolute Value:", num)

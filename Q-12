@@ -1,2 +1,11 @@
-kg = int(input("Enter kilograms: "))
-print("Grams:", kg * 1000)
+import math
+x, y = map(float, input("Enter coordinates of the point (x y): ").split())
+xc, yc = map(float, input("Enter coordinates of the circle's center (xc yc): ").split())
+radius = float(input("Enter radius of the circle: "))
+distance = math.sqrt((x - xc) ** 2 + (y - yc) ** 2)
+if distance < radius:
+    print("Point lies inside the circle")
+elif distance == radius:
+    print("Point lies on the circle")
+else:
+    print("Point lies outside the circle")

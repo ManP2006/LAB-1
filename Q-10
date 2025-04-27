@@ -1,2 +1,8 @@
-dollars = int(input("Enter dollars: "))
-print("Pounds:", (dollars * 48) / 70)
+length = float(input("Enter length of the rectangle: "))
+breadth = float(input("Enter breadth of the rectangle: "))
+area = length * breadth
+perimeter = 2 * (length + breadth)
+if area > perimeter:
+    print("Area is greater than Perimeter")
+else:
+    print("Perimeter is greater than or equal to Area")
